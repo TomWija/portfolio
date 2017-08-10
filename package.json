@@ -7,6 +7,7 @@
     "browser-sync": "^2.18.12",
     "browserify": "^14.4.0",
     "chai": "^4.1.0",
+    "eslint": "^4.4.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-sass": "^3.1.0",
@@ -17,8 +18,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
-    "tests": "mocha htdocs/resources/private/tests/*.js --require babel-register || true"
-  },
-  "dependencies": {
+    "test": "mocha htdocs/resources/private/tests/*.js --require babel-register || true",
+    "lint": "eslint '**/*.js'"
   }
 }

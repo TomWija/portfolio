@@ -13,8 +13,8 @@ const gulp = require("gulp"),
 
 // Paths
 
-var resourcePath = "./app/public/",
-    compiledPath = resourcePath + "compiled/",
+var resourcePath = "./src/",
+    compiledPath = "./app/public/",
     sassPath = resourcePath + "scss/",
     jsPath = resourcePath + "js/";
 
@@ -53,12 +53,12 @@ gulp.task("build:sass", () => {
 // Serve the project using Browser-sync, allowing for hot reloading on file changes
 gulp.task("serve", ["build:js", "build:sass"], () => {
     browserSync.init({
-        server: "./htdocs"
+        server: "./app"
     });
 
-    gulp.watch("htdocs/resources/public/scss/**/*.scss", ["build:sass"]);
-    gulp.watch("htdocs/resources/public/js/**/*.js", ["build:js"]);
-    gulp.watch("htdocs/*.html").on("change", browserSync.reload);
+    gulp.watch("app/public/scss/**/*.scss", ["build:sass"]);
+    gulp.watch("app/public/js/**/*.js", ["build:js"]);
+    gulp.watch("app/*.html").on("change", browserSync.reload);
 });
 
 // Compile all assets
