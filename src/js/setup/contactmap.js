@@ -3,7 +3,10 @@ let setup = function() {
         let home = {lat: 50.842129, lng: -0.092745},
             map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 14,
-                center: home
+                center: home,
+                zoomControl: false,
+                scaleControl: false,
+                scrollwheel: false
             }),
             marker = new google.maps.Marker({
                 position: home,
