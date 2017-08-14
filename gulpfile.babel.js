@@ -66,7 +66,6 @@ gulp.task("build", () => {
     runSequence(
         "build:js",
         "build:sass",
-        "build:images"
     );
 });
 
