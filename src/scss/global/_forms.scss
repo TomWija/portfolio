@@ -3,10 +3,18 @@ form {
         input, textarea {
             width: 100%;
             margin: 5px 0;
+            border: 1px solid #ddd;
+            padding: 10px 10px;
         }
 
         input {
             height: 40px;
+        }
+
+        input[type="submit"] {
+            border: none;
+            color: white;
+            background: linear-gradient(60deg, rgb(152, 95, 204), #651573);
         }
     }
 }
