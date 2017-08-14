@@ -18,7 +18,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
-    "test": "mocha htdocs/resources/private/tests/*.js --require babel-register || true",
+    "test": "mocha src/tests/*.js --require babel-register || true",
     "lint": "eslint '**/*.js'"
   }
 }

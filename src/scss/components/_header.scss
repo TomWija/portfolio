@@ -1,0 +1,24 @@
+header {
+
+    .header-content {
+        color: white;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        .header-content__bio {
+            margin: auto;
+
+            p {
+                font-weight: 100;
+                font-size: 1em;
+                letter-spacing: 0.3px;
+            }
+
+            @include breakpoint(sm) {
+                font-size: 1.3em;
+            }
+        }
+    }
+}

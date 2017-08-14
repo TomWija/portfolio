@@ -1,11 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Thomas Wija</title>
-    <link rel="stylesheet" type="text/css" href="public/compiled/css/main.css">
+
+    <script src="https://use.fontawesome.com/5194272462.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/main.css">
 </head>
 
 <body>
-    
+<div id="splash-image" class="splash__cover-image" style="background-image: url(images/brighton-004.jpg)">
+    <div class="cover-overlay"></div>
+</div>
+<header class='text-center'>
+    <div class="container header-content">
+        <div class="header-content__bio">
+            <h1>Thomas Wija</h1>
+            <p>I'm a 22 year living in Brighton, England.</p>
+            <p>I'm a web developer working with numerous technologies and frameworks.</p>
+            <p>I love a good coffee about as much as I love a good book!</p>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid projects">
+    <h2 class="text-center">My Work</h2>
+</div>
+
+<div class="container-fluid skills text-center">
+    <h2>My Skills</h2>
+    <div class="container">
+        <div class="row skill">
+            <div class="col-md-3 skill-name">
+                <div class="skill-name__content">
+                    <i class="fa fa-code fa-3x"></i>
+                    <h3>Development</h3>
+                </div>
+            </div>
+            <div class="col-md-9 buzzwords">
+                <span class="buzzwords__word">PHP</span>
+                <span class="buzzwords__word">Typo3</span>
+                <span class="buzzwords__word">JavaScript (ES6)</span>
+                <span class="buzzwords__word">Laravel</span>
+                <span class="buzzwords__word">Wordpress</span>
+                <span class="buzzwords__word">React</span>
+                <span class="buzzwords__word">jQuery</span>
+                <span class="buzzwords__word">HTML5 & CSS3</span>
+                <span class="buzzwords__word">node.js</span>
+                <span class="buzzwords__word">SCSS</span>
+            </div>
+        </div>
+
+        <div class="row skill">
+            <div class="col-md-3 skill-name">
+                <div class="skill-name__content">
+                    <i class="fa fa-terminal fa-3x"></i>
+                    <h3>DevOps</h3>
+                </div>
+            </div>
+            <div class="col-md-9 buzzwords">
+                <span class="buzzwords__word">Vagrant</span>
+                <span class="buzzwords__word">Git</span>
+                <span class="buzzwords__word">Gulp</span>
+                <span class="buzzwords__word">Docker</span>
+                <span class="buzzwords__word">Apache2</span>
+                <span class="buzzwords__word">Continuous Integration</span>
+            </div>
+        </div>
+
+        <div class="row skill">
+            <div class="col-md-3 skill-name">
+                <div class="skill-name__content">
+                    <i class="fa fa-th-large fa-3x"></i>
+                    <h3>Design</h3>
+                </div>
+            </div>
+            <div class="col-md-9 buzzwords">
+                <span class="buzzwords__word">Mobile First Design</span>
+                <span class="buzzwords__word">Responsive Design</span>
+                <span class="buzzwords__word">Photoshop</span>
+                <span class="buzzwords__word">Sketch</span>
+                <span class="buzzwords__word">Typography</span>
+                <span class="buzzwords__word">Layouts</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <h2 class="text-center">My Experience</h2>
+    <div class="container">
+        <div class="row experience">
+            <div class="col-md-6 experience-card">
+                <div class="experience-card__content">
+                    <h3>Junior Javascript Developer | Full time</h3>
+                    <a href="https://www.brandwatch.com">Brandwatch</a> | September 2017 - Present
+                    <p>Working as a developer in a small team on Brandwatch's Vizia platform.</p>
+                    <p>Primarily work with ReactJs and Backbone in their core team.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 experience-card">
+                <div class="experience-card__content">
+                    <h3>Junior Web Developer | Full time</h3>
+                    <a href="https://www.3ev.com">3ev</a> | August 2016 - September 2017
+                    <p>First web development job out of university. Worked in a small team of around 8 people over 10 different projects.</p>
+                    <p>We primarily worked with PHP and Javascript across frameworks including: PHP, Javascript, Laravel, React, Typo3 and Wordpress</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 experience-card">
+                <div class="experience-card__content">
+                    <h3>Computer Science BSc | Student</h3>
+                    <a href="https://www.sussex.ac.uk">University of Sussex</a> | September 2012 - July 2016
+                    <p>Studied Computer Science where I graduated with a 2:1 (hons) BSc degree.</p>
+                    <p>This course covered a variety of topics from the general fundamentals of programming and data-structures to more focused
+                    topics such as Natural Language Processing, 3D Web Applications, Databases, Compilers, Web Computing and Networking.</p>
+                    <p>I also wrote a web application for my dissertation using genetic algorithms to generate sandwich recipe combinations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid contact">
+    <h2 class="text-center">My Contact Details</h2>
+    <div class="row">
+        <div id="map" class="col-md-6"></div>
+        <div class="col-md-6">
+            <h3>Contact me on</h3>
+            <p>E-Mail: <a href="mailto:thomas.wija@gmail.com" target="_blank">thomas.wija@gmail.com</a></p>
+            <p>Phone: 07539299476</p>
+
+            <h3>Or find me on</h3>
+            <p>Facebook</p>
+            <p>Github</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+
+</footer>
+
+<script src="public/js/main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2s2vF7i_Gi39xOJ-gc-kzRzG-jeeuVRU&callback=initMap"></script>
 </body>
 </html>

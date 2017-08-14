@@ -56,8 +56,8 @@ gulp.task("serve", ["build:js", "build:sass"], () => {
         server: "./app"
     });
 
-    gulp.watch("app/public/scss/**/*.scss", ["build:sass"]);
-    gulp.watch("app/public/js/**/*.js", ["build:js"]);
+    gulp.watch("src/scss/**/*.scss", ["build:sass"]);
+    gulp.watch("src/js/**/*.js", ["build:js"]);
     gulp.watch("app/*.html").on("change", browserSync.reload);
 });
 
@@ -65,7 +65,8 @@ gulp.task("serve", ["build:js", "build:sass"], () => {
 gulp.task("build", () => {
     runSequence(
         "build:js",
-        "build:sass"
+        "build:sass",
+        "build:images"
     );
 });
 
