@@ -1,7 +1,11 @@
 .skills {
     .skill {
-        margin: 40px 0px;
-        display: flex;
+        margin-bottom: 40px;
+
+        @include breakpoint(sm) {
+            display: flex;
+            margin-top: 20px;
+        }
     }
 
     .skill-name {
