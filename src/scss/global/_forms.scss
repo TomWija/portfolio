@@ -1,0 +1,12 @@
+form {
+    .form-group {
+        input, textarea {
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        input {
+            height: 40px;
+        }
+    }
+}

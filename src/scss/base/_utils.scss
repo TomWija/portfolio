@@ -1,0 +1,19 @@
+.text-center {
+    text-align: center;
+}
+
+.container-fluid {
+    background-color: white;
+}
+
+.fa {
+    margin: 0 10px;
+}
+
+a {
+    color: #333;
+
+    &:hover, &:focus {
+        color: #555;
+    }
+}
