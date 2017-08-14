@@ -1,0 +1,60 @@
+.projects {
+    .project-card {
+        box-shadow:  0px 0px 30px #e0e0e0;
+        padding: 0;
+
+        .project-card__hero {
+            position: relative;
+            text-align: right;
+
+            &:before {
+                content: ' ';
+                display: inline-block;
+                margin-bottom: 130px;
+            }
+
+            &:after {
+                content: ' ';
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: linear-gradient(100deg, rgba(123, 16, 255, 0.77) 0%, rgb(0, 0, 0) 70%);
+                opacity: 0.6;
+                clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+                clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+            }
+
+            .title {
+                position: relative;
+                z-index: 2;
+                color: white;
+                word-wrap: break-word;
+                font-size: 30px;
+                transform: skew(0deg, -3deg);
+                margin-bottom: 20px;
+                display: inline-block;
+                margin-right: 10px;
+
+                @include breakpoint(sm) {
+                    transform: skew(0deg, -5deg);
+                }
+            }
+        }
+
+        .project-card__content {
+            padding: 5px 15px;
+        }
+    }
+}
