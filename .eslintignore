@@ -1,2 +1,3 @@
 app/public/*
 src/js/vendor/*
+src/js/setup/contactmap.js
