@@ -1,12 +1,21 @@
 .projects {
-
     .project-row {
-        display: flex;
+        @include breakpoint(sm) {
+            display: flex;
+        }
+    }
+
+    .project-col {
+        margin-bottom: 15px;
+        @include breakpoint(sm) {
+            margin-bottom: 0px;
+        }
     }
 
     .project-card {
-        box-shadow:  0px 0px 30px #e0e0e0;
+        box-shadow:  0px 0px 20px #e0e0e0;
         padding: 0;
+        height: 100%;
 
         .project-card__hero {
             position: relative;
