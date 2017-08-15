@@ -1,4 +1,9 @@
 .projects {
+
+    .project-row {
+        display: flex;
+    }
+
     .project-card {
         box-shadow:  0px 0px 30px #e0e0e0;
         padding: 0;

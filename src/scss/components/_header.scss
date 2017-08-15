@@ -10,6 +10,13 @@ header {
         .header-content__bio {
             margin: auto;
 
+            h1 {
+                animation-name: floating;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
             p {
                 font-weight: 400;
                 font-size: 1em;
