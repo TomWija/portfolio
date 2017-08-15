@@ -65,7 +65,7 @@ gulp.task("serve", ["build:js", "build:sass"], () => {
 gulp.task("build", () => {
     runSequence(
         "build:js",
-        "build:sass",
+        "build:sass"
     );
 });
 
